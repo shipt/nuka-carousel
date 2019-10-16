@@ -660,10 +660,6 @@ export default class Carousel extends React.Component {
       props = this.props;
     }
 
-    if (this.isTransitioning) {
-      return;
-    }
-
     this.setState({ hasInteraction: true, easing: easing[props.easing] });
     this.isTransitioning = true;
     const previousSlide = this.state.currentSlide;

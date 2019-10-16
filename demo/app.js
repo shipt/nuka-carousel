@@ -40,7 +40,7 @@ class App extends React.Component {
       <div style={{ width: '50%', margin: 'auto' }}>
         <Carousel
           slidesToShow={this.state.slidesToShow}
-          slidesToScroll={this.state.slidesToScroll}
+          slidesToScroll="auto"
           withoutControls={this.state.withoutControls}
           transitionMode={this.state.transitionMode}
           cellAlign={this.state.cellAlign}
